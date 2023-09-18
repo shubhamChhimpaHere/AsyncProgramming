@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --firstcolor: rgba(0, 0, 255, 0.651);
+}
+
+.root {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 350px;
+    margin: auto;
+    margin-top: 100px;
+    /* height: 200px; */
+    
+}
+
+h2 {
+    border-bottom: 1px solid black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main {
+    /* border: 1px solid black; */
+    padding-block: 40px;
+}
+
+.buttons {
+    border-top: 1px solid black;
+    padding: 15px;
+    
+}
+
+.buttons > button {
+    padding: 4px 15px;
+    cursor: pointer;
+    margin-right: 15px;
+    background-color: var(--firstcolor);
+    border-radius: 4px;
+    border: none;
+    color: white;
+
+}
+
+
+#hour::after {
+    content: 'h';
+    font-size: 20px;
+    /* border: 1px solid black; */
+}
+#second::after {
+    content: 's';
+    font-size: 20px;
+
+}
+#mint::after {
+    content: 'm';
+    font-size: 20px;
+
+}
+
+
+
+#hour, #second, #mint {
+    margin-left: 10px;
+    position: relative;
+    font-size: 50px;
+    /* border: 1px solid black; */
+}
+#number:focus {
+    opacity: 1;
+    border-top: 2px solid var(--firstcolor);
+}
+
+#number {
+    opacity: 1;
+    outline: none;
+    border: none;
+    width: 230px;
+    color: transparent;
+    cursor: pointer;
+}
+
+#forfocus:hover {
+    cursor: pointer;
+    width: 230px;
+    /* border: 1px solid black; */
+}
+
+
+
