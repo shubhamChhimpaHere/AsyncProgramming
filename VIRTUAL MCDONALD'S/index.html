@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>virtual mcdonald</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>McDonald’s Virtual Order System</h1>
+
+        <div class="menu">
+            <h2>Menu</h2>
+            <div class="food-item">
+                <img src="burger.jpg" alt="Burger" class="food-image">
+                <input type="checkbox" id="burger" name="burger">
+                <label for="burger">Burger</label>
+            </div>
+
+            <div class="food-item">
+                <img src="fries.jpg" alt="Fries" class="food-image">
+                <input type="checkbox" id="fries" name="fries">
+                <label for="fries">Fries</label>
+            </div>
+        
+            <div class="food-item">
+                <img src="coke.jpg" alt="Coke" class="food-image">
+                <input type="checkbox" id="coke" name="coke">
+                <label for="coke">Coke</label>
+            </div>
+            
+            <!-- ... Add more items as required ... -->
+            
+            <button class="order-btn" id="orderbtn">Order Food</button>
+        </div>
+    
+        <div class="order-completed hidden" id="completedbox">
+            
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
